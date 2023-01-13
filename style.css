@@ -42,9 +42,15 @@ nav{
 .cta-text {
   display: flex;
   font-size: 2rem;
+  
 }
+.cta-text h2 {
+  overflow: hidden;
+}
+
 .cta-text span{
   padding: 0rem 0.4rem;
+  display: block;
   text-shadow: rgba(0, 0, 0, 0) 0px 0px 20px;
 }
 .cta-btn{
