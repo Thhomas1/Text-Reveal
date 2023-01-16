@@ -20,8 +20,14 @@ tl.fromTo('.cta-btn', {y: 20, opacity: 0}, {y:0, opacity: 1}, "<");
 const logo = document.querySelector('.logo');
 const letters = logo.textContent.split("");   // al utilizar el split podemos ver que las palabras del logo "S K I N C A R E" se juntan para declararlas en una constante
 
+logo.textContent = "";
+
 letters.forEach( (letter) => {
     logo.innerHTML +='<span class="letter">' + letter + "</span>";
-});
 
+}); 
+
+    gsap.set('.letter', {display: "inline-block"});    // grab ol de letterrrrs
+
+    gsap.fromTo('.letter', {y:'100%'}, {y: 0, delay: 2, stagger: 0.05, ease: "back.out(3)"});
 

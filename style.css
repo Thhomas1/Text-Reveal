@@ -17,6 +17,7 @@ nav{
 .logo{
   font-size: 1.5rem;
   color: rgb(33, 33, 33);
+  overflow: hidden;
 }
 .hero-section{
   height: 80vh;
